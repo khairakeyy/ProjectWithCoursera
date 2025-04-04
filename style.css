@@ -1,26 +1,83 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-  }
-  
-  img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+}
+
+/* General img style (will be overridden in specific selectors) */
+img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Commented out li style as requested */
+/*
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+*/
+
+/* Navigation styles */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* Only target image inside nav */
+nav img {
+  width: 10%;
+}
+
+/* Grid layout for Gallery */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Make images in grid class full width */
+.grid img {
+  width: 100%;
+}
+
+/* Flex layout (if needed in other pages) */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
